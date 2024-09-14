@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+<title>Timetable</title>
+<style>
+body{
+background-color: #FFE2B8;
+}
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 4px;
+  margin: auto;
+}
+td {
+  width: 100px; 
+  height: 100px; 
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  border: 0px solid #00000000;
+  padding: 8px;
+  text-align: center;
+  padding: 12px;
+  background-color: #f2f2f2;
+}
+.headtablebrow{
+  background-color: #AC5B3B; 
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
+  color: #FFF8EC;
+  font-size: 25px;
+  font-family: kanit;
+}
+.headtablecream{
+  height: 50px; 
+  background-color: #FFF8EC; 
+  border: 3px; 
+  border-style: dotted; 
+  border-color: #AC5B3B;
+  font-family: kanit;
+  font-size: 20px;
+}
+.Monday{
+  color: #000000;
+  background-color: #FFE793;
+  border: 3px; 
+  border-style: dotted; 
+  border-color: #AC5B3B;
+  font-family: kanit;
+  font-size: 25px;
+}
+.Tuesday{
+  color: #000000;
+  background-color: #FFE0D7;
+  border: 3px; 
+  border-style: dotted; 
+  border-color: #AC5B3B;
+  font-family: kanit;
+  font-size: 25px;
+}
+.Wednesday{
+  color: #000000;
+  background-color: #E6DEAC;
+  border: 3px; 
+  border-style: dotted; 
+  border-color: #AC5B3B;
+  font-family: kanit;
+  font-size: 25px;
+}
+.Thursday{
+  color: #000000;
+  background-color: #FFD6B9;
+  border: 3px; 
+  border-style: dotted; 
+  border-color: #AC5B3B;
+  font-family: kanit;
+  font-size: 25px;
+}
+.Friday{
+  color: #000000;
+  background-color: #E1E7FF;
+  border: 3px; 
+  border-style: dotted; 
+  border-color: #AC5B3B;
+  font-family: kanit;
+  font-size: 25px;
+}
+.Break {
+  background-color: #FFF8EC;
+  color: #000000; 
+  writing-mode: vertical-rl;
+  font-size: 25px;
+  font-family: kanit;
+  border: 3px; 
+  border-style: dotted; 
+  border-color: #AC5B3B;
+  padding: auto;
+  width: 10px;
+}
+.Note{
+  font-size: 20px;
+  font-family: kanit;
+  color: #000000;
+  background-color: #ffffff;
+  border: 3px; 
+  border-style: dotted; 
+  border-color: #AC5B3B;
+}
+#full-screen-image {
+  width: 100%;
+  height: calc(250% - 50%);
+  object-fit: cover;
+  border-radius: 20px;
+  border: 5px solid #AC5B3B;
+  position: relative;
+  z-index: 0;
+}
+.Header{
+  position: relative; 
+  z-index: 1;
+  padding: 8px;
+  font-size: 130px;
+  width: 30%;
+  font-family: caveat;
+  color: #AC5B3B;
+}
+#iconbreak{
+  width: 60px;
+  height: 60px;
+  padding: 5%;
+}
+</style>
+</head>
+<body>
+  <table>
+    <tr>
+        <td class="Header">Timetable</td>
+        <td><img id="full-screen-image" src="https://preview.redd.it/return-to-valoran-city-star-guardian-2022-backgrounds-v0-mhia4wzvymfa1.jpg?width=1080&crop=smart&auto=webp&s=62e57094b45fc60921aee747675409b5810952e2" ></td>
+    </tr>
+</table>
+<table>
+  <tr >
+    <th class="headtablebrow">คาบ</th>
+    <th class="headtablebrow">1</th>
+    <th class="headtablebrow">2</th>
+    <th class="headtablebrow">3</th>
+    <th class="headtablebrow">4</th>
+    <th class="headtablebrow">5</th>
+    <th class="headtablebrow">6</th>
+    <th class="headtablebrow">7</th>
+    <th class="headtablebrow">8</th>
+  </tr>
+  <tr>
+    <th class="headtablecream">เวลา</th>
+    <th class="headtablecream">8:00 - 9:00</th>
+    <th class="headtablecream">9:00 - 10:00</th>
+    <th class="headtablecream">10:00 - 11:00</th>
+    <th class="headtablecream">11:00 - 12:00</th>
+    <th class="headtablecream">12:00 - 13:00</th>
+    <th class="headtablecream">13:00 - 14:00</th>
+    <th class="headtablecream">14:00 - 15:00</th>
+    <th class="headtablecream">15:00 - 16:00</th>
+  </tr>
+  <tr>
+    <td class="Monday">จันทร์</td>
+    <td class="Note">Management Information Systems</td>
+    <td colspan="2" class="Note">Discrete Mathematics</td>
+    <!-- <td class="Note"></td> -->
+    <td class="Note">Foundation English 1</td>
+    <td rowspan="5" class="Break"><img id="iconbreak" src="https://cdn-icons-png.flaticon.com/128/7052/7052512.png">พักกลางวัน<img id="iconbreak" src="https://cdn-icons-png.flaticon.com/128/7052/7052512.png"></td>
+    <td class="Note">Introduction to Computer Systems</td>
+    <td colspan="2" class="Note">Practical Computer Networking</td>
+  </tr>
+  <tr>
+    <td class="Tuesday">อังคาร</td>
+    <td colspan="2" class="Note">Internet Service Technology</td>
+    <td colspan="2" class="Note">Wireless Network Technology</td>
+    <td colspan="2" class="Note">Multimedia Programming</td>
+    <td class="Note">Object-Oriented Technology</td>
+  </tr>
+  <tr>
+    <td class="Wednesday">พุธ</td>
+    <td colspan="2" class="Note">Software Engineering</td>
+    <td class="Note">Information Retrieval</td>
+    <td class="Note"></td>
+    <td class="Note"></td>
+    <td class="Note">Knowledge Engineering and Management</td>
+    <td class="Note"></td>
+  </tr>
+  <tr>
+    <td class="Thursday">พฤหัสบดี</td>
+    <td class="Note"></td>
+    <td class="Note"></td>
+    <td class="Note"></td>
+    <td class="Note"></td>
+    <td class="Note"></td>
+    <td class="Note"></td>
+    <td class="Note"></td>
+  </tr>
+  <tr>
+    <td class="Friday">ศุกร์</td>
+    <td colspan="2" class="Note">General Business</td>
+    <td class="Note">E-Commerce Management</td>
+    <td class="Note"></td>
+    <td class="Note"></td>
+    <td class="Note"></td>
+    <td class="Note"></td>
+  </tr>
+</table>
+
+</body>
+</html>
